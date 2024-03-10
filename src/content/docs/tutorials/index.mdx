@@ -1,0 +1,127 @@
+---
+title: Tutorials
+description: A reference page.
+---
+
+import Tip from '$components/Tip/Tip.astro'
+import { Card, CardGrid } from '@astrojs/starlight/components'
+
+There are a ton of different challenges and things to consider when creating a 3D project. Here you will find tutorials, guides, how-to's, examples and more.
+
+## Quick Start
+
+<Card
+  title="Your First Scene"
+  icon="pencil"
+>
+  A quick introduction to [threlte](./quick-start/your-first-scene)
+</Card>
+
+## Basics
+
+<CardGrid>
+  <Card
+    title="Shapes, Assets, Sound and Async"
+    icon="pencil"
+  >
+    how to load/await models, textures, sounds, display text, insert DOM-like components and adjust
+    the scene hirearchy.
+  </Card>
+  <Card
+    title="Helpers, Visual guides and Controls"
+    icon="add-document"
+  >
+    Components that create visual aids, change how the camera moves or enable objects to be moved
+    around.
+  </Card>
+  <Card
+    title="Visual Effects, Materials, Shaders and Post-Processing"
+    icon="setting"
+  >
+    These components change how an object looks, getting effects not possible with standard meshes &
+    lighting.
+  </Card>
+  <Card
+    title="Transitions, Interactivity, Animation and Staging"
+    icon="open-book"
+  >
+    Components to help setup the stage to show off particular objects as well as plugins to bring
+    objects to life and make them user interactive.
+  </Card>
+  <Card
+    title="Performance, Shadows and Rendering"
+    icon="open-book"
+  >
+    Dailing in performance with components that reduce draw calls as well as some different
+    solutions for shadows.
+  </Card>
+</CardGrid>
+
+## How to...
+
+<CardGrid stagger>
+  <Card
+    title="Creating custom Abstractions"
+    icon="setting"
+  >
+    [A guide](/tutorials/how-to/custom-abstractions) to create components like those from the extras
+    package.
+  </Card>
+  <Card
+    title="From three.js to threlte"
+    icon="open-book"
+  >
+    A cheatsheet on how to transform three.js concepts/code into threlte components/code
+  </Card>
+  <Card
+    title="Community Creators"
+    icon="add-document"
+  >
+    A Template for building thrid-party sites/modules which extend threlte
+  </Card>
+</CardGrid>
+
+## Examples
+
+<Card
+  title="interactive-shader"
+  icon="pencil"
+>
+  And other examples
+</Card>
+
+## Other Categories
+
+<CardGrid stagger>
+  <Card
+    title="Make pacman"
+    icon="add-document"
+  >
+    Basics of game dev
+  </Card>
+  <Card
+    title="Visualizing quaternions"
+    icon="setting"
+  >
+    Because everyone likes 4D
+  </Card>
+  <Card
+    title="Misc"
+    icon="open-book"
+  >
+    Not everything fits into a neat category
+  </Card>
+</CardGrid>
+
+<Tip
+  type="note"
+  title="Help Wanted"
+>
+  We'd love your help to make, add to and edit our tutorials and examples. There lots of examples
+  from [three.js](https://threejs.org/examples/#webgl_animation_keyframes) and
+  [r3f](https://docs.pmnd.rs/react-three-fiber/getting-started/examples) that could serve as
+  inspiration. Read through the [contributing
+  guide](https://github.com/threlte/threlte/blob/main/CONTRIBUTING.md) and [Examples
+  README](https://github.com/threlte/threlte/blob/main/apps/docs/src/examples/README.md) to get
+  started.
+</Tip>
