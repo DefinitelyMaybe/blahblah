@@ -1,0 +1,17 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+
+import MobileMenuFooter from "@astrojs/starlight/components/MobileMenuFooter.astro";
+import SidebarSublist from "./SidebarSublist.astro";
+
+import sidebar from "./sidebar.json";
+
+const path = Astro.url.pathname.split("/")[1];
+---
+
+<p>{path}</p>
+<p>{JSON.stringify(sidebar[path])}</p>
+<!-- <SidebarSublist sublist={sidebar["getting-started"]} />
+<div class="md:sl-hidden">
+  <MobileMenuFooter {...Astro.props} />
+</div> -->

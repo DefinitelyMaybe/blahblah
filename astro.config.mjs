@@ -172,6 +172,7 @@ export default defineConfig({
       components: {
         Header: "./src/components/Header/Header.astro",
         PageFrame: "./src/layouts/PageFrame.astro",
+        // Sidebar: "./src/components/Sidebar.astro",
         // MobileTableOfContents: './src/components/MobileTableOfContents.astro'
       },
 
@@ -186,7 +187,7 @@ export default defineConfig({
       // ],
 
       // links validator needs work to complete and should be turned on at the end
-      // plugins: [starlightLinksValidator()]
+      plugins: [], // starlightLinksValidator()
     }),
   ],
   vite: {
@@ -200,6 +201,7 @@ export default defineConfig({
         $assets: resolve("./src/assets"),
         $examples: resolve("./src/examples"),
         $hooks: resolve("./src/hooks"),
+        $utils: resolve("./src/utils"),
         $data: resolve("./src/data"),
       },
     },

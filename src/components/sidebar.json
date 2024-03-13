@@ -1,0 +1,14 @@
+{
+  "getting-started": [
+    {
+      "label": "Starting Here-ish",
+      "link": "/getting-started/"
+    }
+  ],
+  "reference/core": [
+    {
+      "label": "Not Starting Here-ish",
+      "link": "/reference/core"
+    }
+  ]
+}
